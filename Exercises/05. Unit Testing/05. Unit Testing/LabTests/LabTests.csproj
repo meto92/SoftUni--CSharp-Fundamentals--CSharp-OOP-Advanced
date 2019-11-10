@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="Moq" Version="4.8.2" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+    <PackageReference Include="NUnit" Version="3.10.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\01.Database\01.Database.csproj" />
+    <ProjectReference Include="..\02.ExtendedDatabase\02.ExtendedDatabase.csproj" />
+    <ProjectReference Include="..\03.Iterator\03.Iterator.csproj" />
+    <ProjectReference Include="..\04.BubbleSort\04.BubbleSort.csproj" />
+    <ProjectReference Include="..\05.Site\05.Site.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Lab">
+      <HintPath>..\Lab\bin\Debug\netcoreapp2.0\Lab.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
